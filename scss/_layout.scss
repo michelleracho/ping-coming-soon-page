@@ -87,13 +87,6 @@
   &__input {
     cursor: text;
     border: 1px solid $color-secondary-pale-blue;
-    // margin-bottom: 1.5rem;
-
-    // @include breakpoint(sm) {
-    //   flex: 2;
-    //   margin-bottom: unset;
-    //   margin-right: 1.5rem;
-    // }
 
     &::placeholder {
       color: $color-secondary-pale-blue;
@@ -105,9 +98,17 @@
     font-weight: 600;
     background-color: $color-primary-blue;
     box-shadow: 0 0.75rem 1rem 0 rgba($color-primary-blue, 0.2);
+    transition: background-color 0.15s ease;
 
     @include breakpoint(sm) {
       flex: 1;
+    }
+
+    &:hover {
+      @media (hover: hover) {
+        background-color: rgba($color-primary-blue, 0.75);
+        box-shadow: 0 0.5rem 1rem 0 rgba($color-primary-blue, 0.4);
+      }
     }
   }
 }
