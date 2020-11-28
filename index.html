@@ -11,10 +11,16 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
       rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
 
@@ -22,17 +28,45 @@
   </head>
   <body>
     <main class="container">
-      <h1>We are launching soon!</h1>
+      <figure class="logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </figure>
 
-      <p>Subscribe and get notified</p>
+      <section class="form-container">
+        <h1 class="heading heading--main">
+          We are launching <span>soon!</span>
+        </h1>
 
-      <form>
-        <input type="text" />
-        <button class="cta">Notify Me</button>
-      </form>
+        <p class="heading heading--sub">Subscribe and get notified</p>
 
-      <div class="footer">
-        <p>&copy; Copyright Ping. All rights reserved.</p>
+        <form class="form">
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Your email address..."
+            aria-label="email input"
+          />
+          <button class="form__cta">Notify Me</button>
+        </form>
+      </section>
+
+      <figure class="illustration">
+        <img src="./images/illustration-dashboard.png" alt="logo" />
+      </figure>
+
+      <div class="copy">
+        <ul class="list">
+          <li class="list__item">
+            <i class="fab fa-facebook-f" aria-label="facebook link"></i>
+          </li>
+          <li class="list__item">
+            <i class="fab fa-twitter" aria-label="twitter link"></i>
+          </li>
+          <li class="list__item">
+            <i class="fab fa-instagram" aria-label="instagram link"></i>
+          </li>
+        </ul>
+        <p class="copy__text">&copy; Copyright Ping. All rights reserved.</p>
       </div>
     </main>
 

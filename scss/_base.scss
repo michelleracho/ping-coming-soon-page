@@ -15,4 +15,5 @@ body {
   min-height: 100vh;
   position: relative;
   @include flexCenter;
+  justify-content: space-between;
 }

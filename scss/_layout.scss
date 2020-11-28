@@ -1,5 +1,112 @@
 .container {
+  // border: 1px solid;
+  min-height: calc(100vh - 2.1rem);
+  color: $color-neutral-dark-blue;
+  width: 375px;
   text-align: center;
+  // margin: auto 0;
+  padding: 3rem 0;
+  @include flexCenter;
+  justify-content: space-evenly;
+}
+
+.logo {
+  width: 20%;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.form-container {
+  margin: 5rem 0;
+  padding: 0 2rem;
+}
+
+.heading {
+  &--main {
+    color: $color-neutral-gray;
+    font-weight: 300;
+    margin-bottom: 2rem;
+
+    span {
+      color: $color-neutral-dark-blue;
+      font-weight: 700;
+    }
+  }
+
+  &--sub {
+    margin-bottom: 4.5rem;
+  }
+}
+
+.form {
+  @include flexCenter;
+
+  &__input,
+  &__cta {
+    width: 100%;
+    padding: 1.5rem 3rem;
+    border-radius: 5rem;
+    @include btnReset;
+  }
+
+  &__input {
+    cursor: text;
+    border: 1px solid $color-secondary-pale-blue;
+    margin-bottom: 1.5rem;
+
+    &::placeholder {
+      color: $color-secondary-pale-blue;
+    }
+  }
+
+  &__cta {
+    color: #fff;
+    font-weight: 600;
+    background-color: $color-primary-blue;
+    box-shadow: 0 0.75rem 1rem 0 rgba($color-primary-blue, 0.2);
+  }
+}
+
+.illustration {
+  width: 100%;
+  margin-bottom: 5rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.copy {
+  color: $color-neutral-gray;
+
+  .list {
+    @include flexCenter;
+    flex-direction: row;
+    list-style: none;
+    color: $color-primary-blue;
+
+    &__item {
+      @include flexCenter;
+      width: 3.5rem;
+      height: 3.5rem;
+      font-size: 1.6rem;
+      border: 1px solid $color-secondary-pale-blue;
+      border-radius: 50%;
+      margin: auto 0.75rem;
+      cursor: pointer;
+    }
+  }
+
+  &__text {
+    margin-top: 3rem;
+  }
 }
 
 footer {
