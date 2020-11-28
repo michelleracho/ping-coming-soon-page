@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  font-family: $font-default;
+  min-height: 100vh;
+  position: relative;
+  @include flexCenter;
+}

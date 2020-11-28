@@ -1,0 +1,18 @@
+.container {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}
