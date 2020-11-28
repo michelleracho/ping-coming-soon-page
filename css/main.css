@@ -35,36 +35,18 @@ body {
 }
 
 .container {
-  min-height: calc(100vh - 2.1rem);
   color: #151f29;
   width: 100%;
   max-width: 375px;
   text-align: center;
+  margin: auto 0;
   padding: 4.5rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 @media only screen and (min-width: 600px) {
   .container {
     max-width: 600px;
     padding: unset;
-    margin: auto 0;
-    min-height: unset;
   }
 }
 
@@ -80,13 +62,12 @@ body {
 }
 
 .form-container {
-  margin: 5rem 0;
+  margin: 7% 0;
   padding: 0 2rem;
 }
 
 @media only screen and (min-width: 600px) {
   .form-container {
-    margin: 3rem 0 5rem;
     padding: unset;
     width: 100%;
   }
@@ -95,13 +76,7 @@ body {
 .heading--main {
   color: #969696;
   font-weight: 300;
-  margin-bottom: 2rem;
-}
-
-@media only screen and (min-width: 600px) {
-  .heading--main {
-    margin-bottom: 1rem;
-  }
+  margin-bottom: 1rem;
 }
 
 .heading--main span {
@@ -205,7 +180,7 @@ body {
 
 .illustration {
   width: 100%;
-  margin-bottom: 5rem;
+  margin: 5% auto 10%;
 }
 
 .illustration img {

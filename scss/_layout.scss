@@ -1,22 +1,16 @@
 .container {
-  // border: 1px solid;
-  min-height: calc(100vh - 2.1rem);
   color: $color-neutral-dark-blue;
   width: 100%;
   max-width: $bp-xs;
   text-align: center;
-  // margin: auto 0;
+  margin: auto 0;
   padding: 4.5rem 0;
-  @include flexCenter;
-  justify-content: space-between;
+  // @include flexCenter;
+  // justify-content: space-between;
 
   @include breakpoint(sm) {
     max-width: $bp-sm;
-    // padding: 5.5rem 0;
     padding: unset;
-    margin: auto 0;
-    min-height: unset;
-    // max-height: 75vh;
   }
 }
 
@@ -32,12 +26,10 @@
 }
 
 .form-container {
-  margin: 5rem 0;
+  margin: 7% 0;
   padding: 0 2rem;
 
   @include breakpoint(sm) {
-    // padding: 0 3.5rem;
-    margin: 3rem 0 5rem;
     padding: unset;
     width: 100%;
   }
@@ -47,11 +39,7 @@
   &--main {
     color: $color-neutral-gray;
     font-weight: 300;
-    margin-bottom: 2rem;
-
-    @include breakpoint(sm) {
-      margin-bottom: 1rem;
-    }
+    margin-bottom: 1rem;
 
     span {
       color: $color-neutral-dark-blue;
@@ -113,7 +101,7 @@
 
 .illustration {
   width: 100%;
-  margin-bottom: 5rem;
+  margin: 5% auto 10%;
 
   img {
     width: 100%;
