@@ -12,3 +12,11 @@
   background-color: transparent;
   font-family: inherit;
 }
+
+@mixin breakpoint($bp) {
+  @if $bp == sm {
+    @media only screen and (min-width: $bp-sm) {
+      @content;
+    }
+  }
+}
