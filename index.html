@@ -40,12 +40,16 @@
         <p class="heading heading--sub">Subscribe and get notified</p>
 
         <form class="form">
-          <input
-            type="text"
-            class="form__input"
-            placeholder="Your email address..."
-            aria-label="email input"
-          />
+          <div class="form__input-container">
+            <input
+              type="text"
+              class="form__input error-input"
+              placeholder="Your email address..."
+              aria-label="email input"
+            />
+
+            <p class="error-msg">error</p>
+          </div>
           <button class="form__cta">Notify Me</button>
         </form>
       </section>
